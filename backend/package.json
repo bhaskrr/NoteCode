@@ -3,8 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node --env-file=.env ./bin/www",
-    "devstart": "nodemon --env-file=.env ./bin/www",
+    "start": "node ./bin/www",
+    "devstart": "nodemon ./bin/www",
     "serverstart": "DEBUG=backend:* npm run devstart"
   },
   "dependencies": {
