@@ -11,7 +11,7 @@ router.post('/create/new', async function (req, res, next) {
 router.get('/:id', async function (req, res, next) {
   const id = req.params.id;
   try {
-    const snippet = await Snippet.findById({id});
+    const snippet = await Snippet.findById(id);
     if (!snippet) {
       return res.status(404).send({ error: 'Snippet not found' });
     }
