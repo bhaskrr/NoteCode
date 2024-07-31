@@ -23,7 +23,7 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
 
 const corsOptions = {
-  origin: 'http://localhost:5173',
+  origin: process.env.DOMAIN,
   methods: ['GET', 'POST'],
 }
 
